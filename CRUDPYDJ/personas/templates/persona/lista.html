@@ -35,13 +35,13 @@
                 <tbody>
                     {% for vehiculo in vehiculos %}
                     <tr id="vehiculo_{{ vehiculo.id }}">
-                        <td scope="col">{{ vehiculo.placa }}</td>
-                        <td scope="col">{{ vehiculo.modelo }}</td>
-                        <td scope="col">{{ vehiculo.color }}</td>
-                        <td scope="col">{{ vehiculo.precio }}</td>
+                        <td>{{ vehiculo.placa }}</td>
+                        <td>{{ vehiculo.modelo }}</td>
+                        <td>{{ vehiculo.color }}</td>
+                        <td>{{ vehiculo.precio }}</td>
                         
-                        <td scope="col">{{ vehiculo.vendedor.nombre }} {{ vehiculo.vendedor.apellido }}</td>
-                        <td scope="col">{{ vehiculo.vendedor.telefono }}</td>
+                        <td>{{ vehiculo.vendedor.nombre }} {{ vehiculo.vendedor.apellido }}</td>
+                        <td>{{ vehiculo.vendedor.telefono }}</td>
                        
 
                     </tr>
