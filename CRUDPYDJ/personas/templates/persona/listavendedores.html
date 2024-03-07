@@ -36,13 +36,13 @@
                 <tbody>
                     {% for persona in personas %}
                     <tr id="persona_{{ persona.id }}">
-                        <td>{{ persona.documento }}</td>
-                        <td>{{ persona.nombre }}</td>
-                        <td>{{ persona.apellido }}</td>
-                        <td>{{ persona.direccion }}</td>
-                        <td>{{ persona.correo }}</td>
-                        <td>{{ persona.telefono }}</td>
-                        <td>
+                        <td scope="col">{{ persona.documento }}</td>
+                        <td scope="col">{{ persona.nombre }}</td>
+                        <td scope="col">{{ persona.apellido }}</td>
+                        <td scope="col">{{ persona.direccion }}</td>
+                        <td scope="col">{{ persona.correo }}</td>
+                        <td scope="col">{{ persona.telefono }}</td>
+                        <td scope="col">
                             <span style="display-flex;justify-content:space-between">
                                 <a class="btn btn-warning"
                                 title="Editar Datos"

@@ -18,7 +18,7 @@ def registrar_vehiculo(request):
         estado=request.POST.get('txtEstado')
         precio=request.POST.get('txtPrecio')
         color=request.POST.get('txtColor')
-        idCategoria=request.POST.get('txtCategoria')
+        id_categoria=request.POST.get('txtCategoria')
         vendedor=request.POST.get('txtVendedor')
         
         
@@ -28,7 +28,7 @@ def registrar_vehiculo(request):
             estado=estado,
             precio=precio,
             color=color,
-            categoria=Categoria.objects.get(id=idCategoria),
+            categoria=Categoria.objects.get(id=id_categoria),
             vendedor=Vendedor.objects.get(id=vendedor),
             
         )
